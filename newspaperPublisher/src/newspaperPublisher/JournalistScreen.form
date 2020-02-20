@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.JMenuItem" name="jMenuItem1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jMenuItem1"/>
+      </Properties>
+    </Component>
+    <Menu class="javax.swing.JMenuBar" name="journalistMenuBar">
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="journalistMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="email"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_LayoutCodePost" type="java.lang.String" value="journalistMenu.setText(email);"/>
+          </AuxValues>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="logoutMenuItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Logout"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="logoutMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+      </SubComponents>
+    </Menu>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="title" type="java.lang.String" value="Journalist"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="menuBar" type="java.lang.String" value="journalistMenuBar"/>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="journalistTabbedPane" alignment="1" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="journalistTabbedPane" alignment="1" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JTabbedPane" name="journalistTabbedPane">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="submitArticlePanel">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Submit Article">
+                <Property name="tabTitle" type="java.lang.String" value="Submit Article"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="keywordsLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="numberOfPagesLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="0" pref="21" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="coauthorsScrollPanel" pref="280" max="32767" attributes="0"/>
+                                  <Component id="numberOfPagesSpinner" min="-2" pref="101" max="-2" attributes="0"/>
+                                  <Component id="imageButton" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="categoryBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="keywordsField" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="titleLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="summaryLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="summaryField" max="32767" attributes="0"/>
+                                  <Component id="titleField" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="submitButton" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="pathLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="109" max="-2" attributes="0"/>
+                              <Component id="pathField" max="32767" attributes="0"/>
+                          </Group>
+                          <Component id="imageLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="categoryLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="coauthorsLabel" alignment="0" min="-2" pref="144" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="pathLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="pathField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="titleLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="titleField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="summaryLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="summaryField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="keywordsLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="keywordsField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="numberOfPagesLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="numberOfPagesSpinner" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="imageLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="imageButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="categoryLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="categoryBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="coauthorsLabel" min="-2" max="-2" attributes="0"/>
+                          <Component id="coauthorsScrollPanel" min="-2" pref="97" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                      <Component id="submitButton" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="178" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="pathLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Path*"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="titleLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Title*"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="summaryLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Summary*"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="numberOfPagesLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Number of Pages*"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="keywordsLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Keywords(CSV)*"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="imageLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Image*"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="categoryLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Category*"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="coauthorsLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Co-authors"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="pathField">
+            </Component>
+            <Component class="javax.swing.JTextField" name="titleField">
+            </Component>
+            <Component class="javax.swing.JTextField" name="summaryField">
+            </Component>
+            <Component class="javax.swing.JTextField" name="keywordsField">
+            </Component>
+            <Component class="javax.swing.JButton" name="imageButton">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Select Image"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="imageButtonActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="submitButton">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Submit"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="submitButtonActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="categoryBox">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new javax.swing.DefaultComboBoxModel&lt;&gt;(namesArr)" type="code"/>
+                </Property>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="}catch(Exception e){&#xa;    JOptionPane.showMessageDialog(null, e.toString());&#xa;}"/>
+                <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="try{&#xa;    List&lt;String&gt; names = new ArrayList&lt;String&gt;();&#xa;    String sql_query=&quot;SELECT name FROM category&quot;;&#xa;&#xa;    Statement stmt = conn.createStatement();&#xa;    ResultSet rs = stmt.executeQuery(sql_query);&#xa;&#xa;    while(rs.next()){&#xa;        names.add(rs.getString(&quot;name&quot;));&#xa;    }&#xa;&#xa;    String[] namesArr = names.toArray(new String[names.size()]);"/>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="coauthorsScrollPanel">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JList" name="coauthorsList">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="new javax.swing.AbstractListModel&lt;String&gt;() {&#xa;    String[] emailsArr = emails.toArray(new String[emails.size()]);&#xa;    public int getSize() { return emailsArr.length; }&#xa;    public String getElementAt(int i) { return emailsArr[i]; }&#xa;}" type="code"/>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="}catch(Exception e){&#xa;    JOptionPane.showMessageDialog(null, e.toString());&#xa;}"/>
+                    <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="try{&#xa;    List&lt;String&gt; emails = new ArrayList&lt;String&gt;();&#xa;    String sql_query=&quot;SELECT email FROM journalist WHERE email != &quot; + &quot;&apos;&quot;+ email+&quot;&apos;&quot;;&#xa;&#xa;    Statement stmt = conn.createStatement();&#xa;    ResultSet rs = stmt.executeQuery(sql_query);&#xa;&#xa;    while(rs.next()){&#xa;        emails.add(rs.getString(&quot;email&quot;));&#xa;    }"/>
+                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                  </AuxValues>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JSpinner" name="numberOfPagesSpinner">
+              <Properties>
+                <Property name="model" type="javax.swing.SpinnerModel" editor="org.netbeans.modules.form.editors2.SpinnerModelEditor">
+                  <SpinnerModel initial="1" minimum="1" numberType="java.lang.Integer" stepSize="1" type="number"/>
+                </Property>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="viewArticles">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="View Artciles">
+                <Property name="tabTitle" type="java.lang.String" value="View Artciles"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="articlesScrollPane" min="-2" pref="225" max="-2" attributes="0"/>
+                          <Component id="myArticlesLabel" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="236" max="-2" attributes="0"/>
+                              <Component id="coauthorsPane2" min="-2" pref="260" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="98" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="commentsLabel2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="numberOfPages2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="statusLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="summaryLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="titleLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="categoryLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="keywordsLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="coauthorsLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="infoLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="titleField2" max="32767" attributes="0"/>
+                                  <Component id="summaryField2" max="32767" attributes="0"/>
+                                  <Component id="statusField2" alignment="0" pref="260" max="32767" attributes="0"/>
+                                  <Component id="commentsField2" alignment="1" pref="260" max="32767" attributes="0"/>
+                                  <Component id="categoryField2" pref="260" max="32767" attributes="0"/>
+                                  <Component id="keywordsField2" pref="260" max="32767" attributes="0"/>
+                                  <Component id="numberOfPagesField2" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="infoLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="myArticlesLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="33" pref="33" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="titleLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="titleField2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="summaryLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="summaryField2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="statusLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="statusField2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="commentsLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="commentsField2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="numberOfPages2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="numberOfPagesField2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="categoryLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="categoryField2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="keywordsLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="keywordsField2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="coauthorsLabel2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="coauthorsPane2" min="-2" pref="159" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="articlesScrollPane" alignment="1" min="-2" pref="481" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="84" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JScrollPane" name="articlesScrollPane">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JList" name="articlesList">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
+                      <StringArray count="0"/>
+                    </Property>
+                    <Property name="selectionMode" type="int" value="0"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="valueChanged" listener="javax.swing.event.ListSelectionListener" parameters="javax.swing.event.ListSelectionEvent" handler="articlesListValueChanged"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="try{&#xa;    List&lt;String&gt; articleList = new ArrayList&lt;String&gt;();&#xa;    String articleQuery = &quot;SELECT `path` FROM `article` INNER JOIN submits ON path=article_path WHERE journalist_email = &quot; + &quot;&apos;&quot; + email + &quot;&apos;&quot;;&#xa;    Statement stmt = conn.createStatement();&#xa;    ResultSet rs = stmt.executeQuery(articleQuery);&#xa;&#xa;    while(rs.next()){&#xa;        articleList.add(rs.getString(&quot;path&quot;));&#xa;    }&#xa;&#xa;    String[] articleArray = articleList.toArray(new String[articleList.size()]);&#xa;    articlesList.setListData(articleArray);&#xa;&#xa;&#xa;}catch(Exception e){&#xa;    JOptionPane.showMessageDialog(null, e.toString());&#xa;}"/>
+                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                  </AuxValues>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JLabel" name="infoLabel2">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Ubuntu" size="15" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Info"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="titleLabel2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Title"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="summaryLabel2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Summary"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="statusLabel2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Status"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="commentsLabel2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Comments"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="categoryLabel2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Category"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="keywordsLabel2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Keywords"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="coauthorsLabel2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Co-authors"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="titleField2">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="summaryField2">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="statusField2">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="commentsField2">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="categoryField2">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="keywordsField2">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="coauthorsPane2">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JList" name="coauthorsList2">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
+                      <StringArray count="0"/>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="coauthorsList2.setSelectionInterval(-1, -1);"/>
+                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                  </AuxValues>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JLabel" name="numberOfPages2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Number of Pages"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="numberOfPagesField2">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="myArticlesLabel">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Ubuntu" size="15" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="My Articles"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="reviseArticles">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Revise Article">
+                <Property name="tabTitle" type="java.lang.String" value="Revise Article"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="pathLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="titleLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="categoryBox3" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="pathBox3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="titleField3" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="summaryField3" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="keywordsField3" min="-2" pref="280" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="numberOfPagesSpinner3" min="-2" pref="101" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="reviseButton3" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="339" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="pathLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="pathBox3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="titleLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="titleField3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="summaryField3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="keywordsField3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="numberOfPagesSpinner3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="categoryBox3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="reviseButton3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="341" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="pathLabel3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Path"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="pathBox3">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="0"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="pathBox3ItemStateChanged"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="try{&#xa;    List&lt;String&gt; paths = new ArrayList&lt;String&gt;();&#xa;    String sql_query=&quot;SELECT `path` FROM `article` INNER JOIN submits ON path=article_path WHERE journalist_email = &quot; + &quot;&apos;&quot; + email + &quot;&apos;&quot;;&#xa;&#xa;    Statement stmtInit = conn.createStatement();&#xa;    ResultSet rsInit = stmtInit.executeQuery(sql_query);&#xa;&#xa;    while(rsInit.next()){&#xa;        paths.add(rsInit.getString(&quot;path&quot;));&#xa;    }&#xa;&#xa;    String[] pathsArr = paths.toArray(new String[paths.size()]);&#xa;    pathBox3.setModel(new javax.swing.DefaultComboBoxModel&lt;&gt;(pathsArr));&#xa;}catch(Exception e){&#xa;    JOptionPane.showMessageDialog(null, e.toString());&#xa;}&#xa;&#xa;// Code adding the component to the parent container - not shown here"/>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                <AuxValue name="JavaCodeGenerator_allCodePost" type="java.lang.String" value="//Update other fields&#xa;try{&#xa;    String categoryIDQuery = &quot;SELECT `category_id` FROM `article` WHERE path = &quot; + &quot;&apos;&quot; + pathBox3.getSelectedItem().toString() + &quot;&apos;&quot;;&#xa;    Statement stmtCatID = conn.createStatement();&#xa;    ResultSet rsCatID = stmtCatID.executeQuery(categoryIDQuery);&#xa;&#xa;    String categoryID = &quot;&quot;;&#xa;    if(rsCatID.next()){&#xa;        categoryID = rsCatID.getString(&quot;category_id&quot;);&#xa;    }&#xa;&#xa;    // Get category name from id&#xa;    String categoryQuery=&quot;SELECT name FROM category WHERE id= &quot; + &quot;&apos;&quot; + categoryID + &quot;&apos;&quot;;&#xa;    Statement stmtCat = conn.createStatement();&#xa;    ResultSet rsCat = stmtCat.executeQuery(categoryQuery);&#xa;    String categoryName = &quot;&quot;;&#xa;    if(rsCat.next()){&#xa;        categoryName = rsCat.getString(&quot;name&quot;);&#xa;    }&#xa;&#xa;    String articleQuery = &quot;SELECT `title`, `summary`, `category_id`, `number_of_pages` FROM `article` WHERE path = &quot; + &quot;&apos;&quot; + pathBox3.getSelectedItem().toString() + &quot;&apos;&quot;;&#xa;    Statement stmt = conn.createStatement();&#xa;    ResultSet rs = stmt.executeQuery(articleQuery);&#xa;&#xa;&#xa;    //Set the fields for title, summary, category, number_of_pages&#xa;    if(rs.next()){&#xa;        titleField3.setText(rs.getString(&quot;title&quot;));&#xa;        summaryField3.setText(rs.getString(&quot;summary&quot;));&#xa;        numberOfPagesSpinner3.setValue(rs.getInt(&quot;number_of_pages&quot;));&#xa;        categoryBox3.setSelectedItem(categoryName);&#xa;    }&#xa;&#xa;    //Set fields for keywords&#xa;    String keywordsQuery = &quot;SELECT `keyword` FROM `keywords` WHERE article_path = &quot; + &quot;&apos;&quot; + pathBox3.getSelectedItem().toString() + &quot;&apos;&quot;;&#xa;    Statement stmtKey = conn.createStatement();&#xa;    ResultSet rsKey = stmtKey.executeQuery(keywordsQuery);&#xa;&#xa;    List&lt;String&gt; keywordsList = new ArrayList&lt;String&gt;();&#xa;&#xa;    while(rsKey.next()){&#xa;        keywordsList.add(rsKey.getString(&quot;keyword&quot;));&#xa;    }&#xa;&#xa;    String keywordsString = String.join(&quot;, &quot;, keywordsList);&#xa;    keywordsField3.setText(keywordsString);&#xa;}&#xa;catch(Exception e){&#xa;    JOptionPane.showMessageDialog(null, e.toString());&#xa;}&#xa;"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JLabel" name="titleLabel3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Title*"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="titleField3">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Summary*"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="summaryField3">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Keywords*"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="keywordsField3">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Number of Pages*"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JSpinner" name="numberOfPagesSpinner3">
+              <Properties>
+                <Property name="model" type="javax.swing.SpinnerModel" editor="org.netbeans.modules.form.editors2.SpinnerModelEditor">
+                  <SpinnerModel initial="1" minimum="1" numberType="java.lang.Integer" stepSize="1" type="number"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel4">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Category*"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="categoryBox3">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="0"/>
+                </Property>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="try{&#xa;    List&lt;String&gt; names = new ArrayList&lt;String&gt;();&#xa;    String sql_query=&quot;SELECT name FROM category&quot;;&#xa;&#xa;    Statement stmt = conn.createStatement();&#xa;    ResultSet rs = stmt.executeQuery(sql_query);&#xa;&#xa;    while(rs.next()){&#xa;        names.add(rs.getString(&quot;name&quot;));&#xa;    }&#xa;&#xa;    String[] namesArr = names.toArray(new String[names.size()]);&#xa;    categoryBox3.setModel(new javax.swing.DefaultComboBoxModel&lt;&gt;(namesArr));&#xa;}catch(Exception e){&#xa;    JOptionPane.showMessageDialog(null, e.toString());&#xa;}"/>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JButton" name="reviseButton3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Revise"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="reviseButton3ActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
