@@ -1,4 +1,4 @@
-# Newspaper Database implemented in MySQL with GUI
+# Newspaper Database
 
 ## About The Project
 
